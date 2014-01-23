@@ -6,4 +6,4 @@ install:
   - pip install git+git://github.com/TangledWeb/tangled.git#egg=tangled
   - pip install -e .
 script:
-  - nosetests tangled --with-coverage
+  - nosetests
