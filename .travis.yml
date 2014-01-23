@@ -5,6 +5,4 @@ install:
   - pip install git+git://github.com/TangledWeb/tangled.git#egg=tangled[dev]
   - pip install -e .[dev]
 script:
-  - tangled test
-  - nosetests tangled
-  - py.test tangled
+  - nosetests tangled --with-coverage
