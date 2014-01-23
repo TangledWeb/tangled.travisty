@@ -2,8 +2,8 @@ language: python
 python:
   - "3.3"
 install:
-  - pip install coverage
-  - pip install git+git://github.com/TangledWeb/tangled.git#egg=tangled
-  - pip install -e .
+  - pip install git+git://github.com/TangledWeb/tangled.git#egg=tangled[dev]
+  - pip install -e .[dev]
 script:
-  - nosetests tangled
+  - nosetests
+  - sphinx-build -E docs docs/_build
