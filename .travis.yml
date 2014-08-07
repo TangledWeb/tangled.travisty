@@ -7,7 +7,6 @@ install:
   - pip install -U pip
   - pip install zc.buildout
   - buildout
-  - export PATH=./bin:$PATH
 script:
-  - tangled test
+  - ./bin/tangled test
   - nosetests
