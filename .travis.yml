@@ -8,6 +8,8 @@ install:
   - pip install zc.buildout
   - pip install -e .[dev]
   - buildout
+  - export PATH=./bin:$PATH
+  - which nosetests
 script:
-  - ./bin/tangled test
-  - ./bin/nosetests
+  - tangled test
+  - nosetests
