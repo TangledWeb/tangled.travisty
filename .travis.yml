@@ -9,7 +9,6 @@ install:
   - pip install -e .[dev]
   - buildout
   - export PATH=./bin:$PATH
-  - which nosetests
 script:
   - tangled test
   - nosetests
