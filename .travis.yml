@@ -6,7 +6,6 @@ install:
   - pip install -U setuptools
   - pip install -U pip
   - pip install zc.buildout
-  - pip install -e .[dev]
   - buildout
   - export PATH=./bin:$PATH
 script:
