@@ -7,6 +7,6 @@ install:
   - pip install -U pip
   - pip install zc.buildout
   - buildout dev:dependent-scripts=true
-  - ls ./bin
 script:
   - ./bin/tangled test
+  - ./bin/python -m nose
