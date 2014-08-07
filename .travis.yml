@@ -6,7 +6,7 @@ install:
   - pip install -U setuptools
   - pip install -U pip
   - pip install zc.buildout
-  - buildout
+  - buildout dev:dependent-scripts=true
+  - ls ./bin
 script:
   - ./bin/tangled test
-  - nosetests
